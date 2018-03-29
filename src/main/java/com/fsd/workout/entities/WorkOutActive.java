@@ -20,7 +20,7 @@ import javax.persistence.Table;
 public class WorkOutActive{
  
 	@Id
-	@Column(name="workOut_active_id")
+	@Column(name="workOutActiveId")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long workOutActiveId;
 	
@@ -97,6 +97,7 @@ public class WorkOutActive{
 	}
 	
 	
+	
 	public WorkOutActive() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -107,6 +108,7 @@ public class WorkOutActive{
 				+ startTime + ", endDate=" + endDate + ", endTime=" + endTime + ", comment=" + comment + ", status="
 				+ status + ", workoutId=" + workoutId + "]";
 	}
+
 	
 	
 

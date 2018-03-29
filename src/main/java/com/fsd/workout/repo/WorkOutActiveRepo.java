@@ -9,4 +9,5 @@ import com.fsd.workout.entities.WorkOutCollection;
 public interface WorkOutActiveRepo extends CrudRepository<WorkOutActive,Long> {
  
 	WorkOutActive findByworkoutId(Long id);
+	WorkOutActive findByworkOutActiveId(Long id);
 }

@@ -1,6 +1,7 @@
 package com.fsd.workout.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -31,6 +32,11 @@ public class WorkOutCollectionServiceImp implements WorkOutCollectionActiveServi
 	@Override
 	public WorkOutCollection updateWorkOut(WorkOutCollection workout) {
 		// TODO Auto-generated method stub
+//		WorkOutCollection	updatedworkout = workOutRepo.findByWorkoutId(workout.getWorkoutId());
+//		updatedworkout.setTitle(workout.getTitle());
+//		updatedworkout.setNote(workout.getNote());
+//		updatedworkout.setCbm(workout.getCbm());
+		
 		return workOutRepo.save(workout);
 	}
 

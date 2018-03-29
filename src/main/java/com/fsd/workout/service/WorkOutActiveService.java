@@ -2,6 +2,7 @@ package com.fsd.workout.service;
 
 import java.util.List;
 
+import com.fsd.workout.entities.CaloryTracker;
 import com.fsd.workout.entities.WorkOutActive;
 
 public interface WorkOutActiveService {
@@ -15,6 +16,14 @@ public interface WorkOutActiveService {
 	WorkOutActive updateWorkOut(WorkOutActive workout);
 
 	void deleteWorkOut(Long id);
+
+	
+
+	CaloryTracker getWorkOutActiveCalDetails(WorkOutActive workOutActive, Double cbm);
+
+	WorkOutActive getWorkOutDetailsByActiveId(Long id);
+
+	List<Object[]> MonthlyCal();
 	
 
 }

@@ -27,7 +27,7 @@ public class WorkOutCollection  {
 	@Column(name="workout_note")
 	private String note;
 	@Column(name="calories_burn_per_min", precision=4,scale=2)
-	private float cbm;
+	private Float cbm;
 	
 	private Long categoryId;
 	
@@ -67,11 +67,11 @@ public class WorkOutCollection  {
 		this.note = note;
 	}
 
-	public float getCbm() {
+	public Float getCbm() {
 		return cbm;
 	}
 
-	public void setCbm(float cbm) {
+	public void setCbm(Float cbm) {
 		this.cbm = cbm;
 	}
 
@@ -84,6 +84,31 @@ public class WorkOutCollection  {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+	public WorkOutCollection(String title, String note, Float cbm, Long categoryId) {
+		super();
+		this.title = title;
+		this.note = note;
+		this.cbm = cbm;
+		this.categoryId = categoryId;
+	}
+
+	public WorkOutCollection(Long workoutId, String title, String note, Float cbm, Long categoryId) {
+		super();
+		this.workoutId = workoutId;
+		this.title = title;
+		this.note = note;
+		this.cbm = cbm;
+		this.categoryId = categoryId;
+	}
+
+	public WorkOutCollection(String title, String note, Long categoryId) {
+		super();
+		this.title = title;
+		this.note = note;
+		this.categoryId = categoryId;
+	}
+	
 
 	
 	

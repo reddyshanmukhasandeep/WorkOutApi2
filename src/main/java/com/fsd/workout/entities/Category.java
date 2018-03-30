@@ -53,6 +53,11 @@ public class Category  {
 	public Category() {
 		super();
 	}
+
+	public Category(String categoryName) {
+		super();
+		this.categoryName = categoryName;
+	}
 	  
 	  
 	 

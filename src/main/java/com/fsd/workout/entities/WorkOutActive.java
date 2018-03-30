@@ -108,6 +108,44 @@ public class WorkOutActive{
 				+ startTime + ", endDate=" + endDate + ", endTime=" + endTime + ", comment=" + comment + ", status="
 				+ status + ", workoutId=" + workoutId + "]";
 	}
+	public WorkOutActive(LocalDate startDate, LocalTime startTime, LocalDate endDate, LocalTime endTime, String comment,
+			boolean status, Long workoutId) {
+		super();
+		this.startDate = startDate;
+		this.startTime = startTime;
+		this.endDate = endDate;
+		this.endTime = endTime;
+		this.comment = comment;
+		this.status = status;
+		this.workoutId = workoutId;
+	}
+	public WorkOutActive(Long workOutActiveId, LocalDate startDate, LocalTime startTime, LocalDate endDate,
+			LocalTime endTime, String comment, boolean status, Long workoutId) {
+		super();
+		this.workOutActiveId = workOutActiveId;
+		this.startDate = startDate;
+		this.startTime = startTime;
+		this.endDate = endDate;
+		this.endTime = endTime;
+		this.comment = comment;
+		this.status = status;
+		this.workoutId = workoutId;
+	}
+	public WorkOutActive(LocalDate startDate, LocalTime startTime, LocalDate endDate, LocalTime endTime, String comment,
+			boolean status) {
+		super();
+		this.startDate = startDate;
+		this.startTime = startTime;
+		this.endDate = endDate;
+		this.endTime = endTime;
+		this.comment = comment;
+		this.status = status;
+	}
+	public WorkOutActive(String comment, boolean status) {
+		super();
+		this.comment = comment;
+		this.status = status;
+	}
 
 	
 	

@@ -49,7 +49,8 @@ public class WorkOutActiveServiceImpl implements WorkOutActiveService{
 		if(workout.getStartDate() ==null)
 		workout.setStartDate(LocalDate.now());
 		
-		
+		if(workout.getStartTime() ==null)
+			workout.setStartTime(LocalTime.now());
 		return workOutActiveRepo.save(workout);
 	}
 
@@ -58,6 +59,8 @@ public class WorkOutActiveServiceImpl implements WorkOutActiveService{
 		
 		if(workOutActive.getEndDate() ==null)
 			workOutActive.setEndDate(LocalDate.now());
+		if(workOutActive.getEndTime() ==null)
+			workOutActive.setEndTime(LocalTime.now());
 		
 		Long workOutId =workOutActive.getWorkoutId();
 		WorkOutCollection workOutCollection=workOutColletionRepo.findByWorkoutId(workOutId);
